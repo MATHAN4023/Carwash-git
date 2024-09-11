@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background color for the whole page */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.list-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the list container */
+    border-right: 2px solid #ddd; /* Light border to separate from map */
+    overflow-y: auto;
+}
+
+.map-container {
+    flex: 2;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #ddd; /* Light border around the map */
+    border-radius: 8px; /* Rounded corners for the map */
+}
+
+h2 {
+    margin-top: 0;
+    color: #333; /* Darker text color for the heading */
+    font-size: 1.5em; /* Larger font size for the heading */
+}
+
+.shop-list {
+    list-style: none;
+    padding: 0;
+}
+
+.shop-list li {
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    padding: 10px;
+    border: 1px solid #ddd; /* Border around each shop item */
+    border-radius: 4px; /* Rounded corners for each shop item */
+    background-color: #fff; /* White background for each shop item */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.shop-list li:hover {
+    background-color: #f1f1f1; /* Light grey background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect on hover */
+}
+
+.shop-link {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+    font-weight: bold;
+}
+
+.shop-link:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+
+    .list-container {
+        border-right: none; /* Remove border on smaller screens */
+        border-bottom: 2px solid #ddd; /* Add border below list on smaller screens */
+        margin-bottom: 20px; /* Add margin below the list on smaller screens */
+    }
+
+    .map {
+        border: none; /* Remove border around the map on smaller screens */
+    }
+}

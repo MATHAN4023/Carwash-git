@@ -1,8 +1,11 @@
 function initMap() {
-    const map = L.map('map').setView([13.0827, 80.2707], 10);
+    // Initialize the map with a global view
+    const map = L.map('map').setView([0, 0], 2); // Centered on (0, 0) with zoom level 2 for a global view
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    // Add Mapbox tile layer with a stylish theme
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        id: 'mapbox/streets-v11', // You can use 'streets-v11', 'outdoors-v11', 'light-v10', etc.
+        accessToken: 'pk.eyJ1IjoibWF0aGFuaXlhcHBhbiIsImEiOiJjbTE1YnFuMGQwN2VnMnFzOGptNGZwdGp2In0.MYR3iofxPqoz0P4zDJ81bA'
     }).addTo(map);
 
     // Define shop locations with detailed information
@@ -27,16 +30,40 @@ function initMap() {
             name: 'DETAILING WOLVES - Kanyakumari',
             address: '789 Test Lane, Kanyakumari, Tamil Nadu',
             phone: '+91 456 789 0123'
-        }
+        },
+        { 
+            lat: 28.7041, 
+            lng: 77.1025, 
+            name: ' DETAILING WOLVES - New Delhi',
+            address: '789 Test Lane, New Delhi , India',
+            phone: '+91 456 789 0123'
+        },
+        { 
+            lat: 19.0760, 
+            lng: 72.8777, 
+            name: 'DETAILING WOLVES - Mumbai',
+            address: '789 Test Lane, Mumbai, India',
+            phone: '+91 456 789 0123'
+        },
+        { 
+            lat: 22.5726, 
+            lng: 88.3639, 
+            name: 'DETAILING WOLVES - Kolkata',
+            address: '789 Test Lane, Kolkata, India',
+            phone: '+91 456 789 0123'
+        },
     ];
 
     // Define the custom icon
     const shopIcon = L.icon({
-        iconUrl: 'https://icons8.com/icon/10288/king', // Replace with your custom shop icon URL
-        iconSize: [32, 32], // Size of the icon
+        iconUrl: './21.png', // Replace with your custom shop icon URL
+        iconSize: [52, 32], // Size of the icon
         iconAnchor: [16, 32], // Anchor point of the icon (centered at the bottom)
         popupAnchor: [0, -32] // Position of the popup relative to the icon
     });
+
+    // Initialize an array to hold the marker positions
+    const markerPositions = [];
 
     // Add markers to the map with detailed popups
     const markers = {};
@@ -50,9 +77,26 @@ function initMap() {
         const marker = L.marker([location.lat, location.lng], { icon: shopIcon })
             .addTo(map)
             .bindPopup(popupContent);
+        
+        // Add marker positions to the array
+        markerPositions.push([location.lat, location.lng]);
+
+        // Add a bounce animation effect when the marker is added
+        marker.on('add', function() {
+            this._icon.classList.add('bounce');
+        });
 
         markers[location.name] = marker;
     });
+
+    // Optionally fit the map bounds to include all markers
+    if (markerPositions.length > 0) {
+        const bounds = L.latLngBounds(markerPositions);
+        map.fitBounds(bounds, {
+            padding: [20, 20], // Add padding around the bounds
+            maxZoom: 4 // Set a maximum zoom level to ensure the map does not zoom in too much
+        });
+    }
 
     // Handle click events on the shop list
     document.querySelectorAll('.shop-link').forEach(link => {
@@ -60,7 +104,11 @@ function initMap() {
             e.preventDefault();
             const lat = parseFloat(this.getAttribute('data-lat'));
             const lng = parseFloat(this.getAttribute('data-lng'));
-            map.setView([lat, lng], 15);
+            
+            // Smoothly animate the view transition
+            map.flyTo([lat, lng], 15, {
+                duration: 1 // Duration of the animation in seconds
+            });
 
             const name = this.textContent;
             if (markers[name]) {
@@ -69,5 +117,6 @@ function initMap() {
         });
     });
 }
+
 
 document.addEventListener('DOMContentLoaded', initMap);

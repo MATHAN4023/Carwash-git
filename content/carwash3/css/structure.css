@@ -1920,7 +1920,8 @@ a.button.button_green {
 #buddypress #search-members-form>* {
 	float: left
 }
-#buddypress div.dir-search input[type="text"], #buddypress li.groups-members-search input[type="text"] {
+/* #buddypress div.dir-search input[type="text"], #buddypress li.groups-members-search input[type="text"] { */
+#buddypress div.dir-search , #buddypress li.groups-members-search  {
 	padding: 2px 3px;
 	font-size: 100%;
 	margin-right: 5px;
@@ -2082,7 +2083,8 @@ span.wpcf7-form-control-wrap .wpcf7-date, span.wpcf7-form-control-wrap .wpcf7-qu
 	border-right: 8px solid transparent;
 	border-left: 8px solid transparent
 }
-#popup_contact .popup_contact_wrapper form input[type="text"], #popup_contact .popup_contact_wrapper form input[type="email"], #popup_contact .popup_contact_wrapper form textarea {
+#popup_contact .popup_contact_wrapper form , #popup_contact .popup_contact_wrapper form input[type="email"], #popup_contact .popup_contact_wrapper form textarea {
+/* #popup_contact .popup_contact_wrapper form input[type="text"], #popup_contact .popup_contact_wrapper form input[type="email"], #popup_contact .popup_contact_wrapper form textarea { */
 	background: #fff;
 	margin-bottom: 10px
 }
@@ -4585,7 +4587,7 @@ body.header-below:not(.template-slider) #Header {
 }
 #Top_bar a.responsive-menu-toggle i {
 	font-size: 22px;
-	line-height: 34px
+	line-height: 84px
 }
 #Top_bar a.responsive-menu-toggle span {
 	float: right;
@@ -10935,16 +10937,17 @@ input[type="date"], input[type="email"], input[type="number"], input[type="passw
 	padding: 10px;
 	outline: none;
 	margin: 0;
-	width: 230px;
-	max-width: 100%;
+	/* width: 230px; */
+	/* max-width: 100%; */
 	display: block;
 	margin-bottom: 20px;
 	font-size: 15px;
 	border-width: 1px;
-	border-style: solid;
+	border-style: solid black;
 	border-radius: 0;
 	box-sizing: border-box;
 	-webkit-appearance: none
+	
 }
 input[type="date"]::-webkit-datetime-edit {
 	font-size: 15px;

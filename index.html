@@ -35,10 +35,30 @@
 	<link rel="stylesheet" href="plugins/rs-plugin-6.custom/css/rs6.css">
 	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-	
+
 	<style>
 		html {
 			scroll-behavior: smooth;
+
+		}
+
+		/* .row{
+			margin-left: 0;
+			margin-right: 0;
+		} */
+
+		@media only screen and (max-width: 768px) {
+			.linecleandiv {
+				display: none;
+			}
+
+			.cmr-arrow-btn {
+				display: none;
+			}
+			.image-content-webpack{
+				display: none;
+			}
+
 		}
 	</style>
 </head>
@@ -47,35 +67,33 @@
 	class="home page template-slider content-brightness-dark input-brightness-dark style-simple button-custom layout-full-width if-zoom no-shadows header-transparent header-fw sticky-header sticky-tb-color ab-hide subheader-both-center menu-link-color menuo-right mobile-tb-center mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-sticky mobile-header-mini mobile-icon-user-ss mobile-icon-wishlist-ss mobile-icon-search-ss mobile-icon-wpml-ss mobile-icon-action-ss be-page-5">
 	<div id="Wrapper">
 		<div id="Header_wrapper">
-			<header id="Header">	
+			<header id="Header">
 				<div id="Top_bar">
 					<div class="container">
-						<div class="column one" >
+						<div class="column one">
 							<div class="top_bar_left clearfix">
-								<div class="logo" >
-									<a id="logo"  href="index-carwash3.html" title="DETAILING WOLVES 3 - Betheme"
-										data-height="60" data-padding="15"><img class="logo-main scale-with-grid svg"
+								<div class="logo">
+									<a id="logo" href="#home" title="DETAILING WOLVES 3 - Betheme" data-height="60"
+										data-padding="15">
+										<img class="logo-main scale-with-grid svg"
 											src="content/carwash3/images/logo-alter.png" data-retina="" data-height=""
-											alt="carwash" data-no-retina /><img class="logo-sticky scale-with-grid svg"
-											src="content/carwash3/images/logo-alter.png" data-retina="" data-height=""
-											alt="carwash" data-no-retina /><img class="logo-mobile scale-with-grid svg"
-											src="content/carwash3/images/logo-alter.png" data-retina="" data-height=""
-											alt="carwash" data-no-retina /><img
-											class="logo-mobile-sticky scale-with-grid svg"
-											src="content/carwash3/images/logo-alter.png" data-retina="" data-height=""
-											alt="carwash" data-no-retina /></a>
+											alt="carwash" data-no-retina />
+										<!-- <img class="logo-sticky scale-with-grid svg" src="content/carwash3/images/logo-alter.png" data-retina="" data-height="" alt="carwash" data-no-retina /> -->
+										<!-- <img class="logo-mobile scale-with-grid svg" src="content/carwash3/images/logo-alter.png" data-retina="" data-height="" alt="carwash" data-no-retina /> -->
+										<!-- <img class="logo-mobile-sticky scale-with-grid svg" src="content/carwash3/images/logo-alter.png" data-retina="" data-height="" alt="carwash" data-no-retina /> -->
+									</a>
 								</div>
+
 								<div class="menu_wrapper"> <a class="responsive-menu-toggle" href="#"
 										aria-label="Mobile menu"><i class="icon-menu-fine" aria-hidden="true"></i></a>
 									<nav id="menu" role="navigation" aria-expanded="false" aria-label="Main Menu">
 										<ul id="menu-main-menu" class="menu menu-main">
-											<li class=" current-menu-item page_item current_page_item"> <a
-													href="#home"><span>HOME</span></a> </li>
+											<!-- <li class=" current-menu-item page_item current_page_item"> <a
+													href="#home"><span>HOME</span></a> </li> -->
 											<li> <a href="#about"><span>ABOUT US</span></a> </li>
-											<li> <a href="#services"><span>SERVICES &#038;
-														PRICING</span></a> </li>
-											<li> <a href="content/carwash3/works.html"><span>WORKS</span></a> </li>
-											<li> <a href="#contact"><span>CONTACT</span></a> </li>
+											<li> <a href="#services"><span>SERVICES</span></a> </li>
+											<li> <a href="#work"><span>WORKS</span></a> </li>
+											<li> <a href="#Footer"><span>CONTACT</span></a> </li>
 										</ul>
 									</nav>
 								</div>
@@ -126,7 +144,7 @@
 									<!--
 
 										-->
-										<rs-group id="slider-1-slide-1-layer-11" data-type="group"
+									<rs-group id="slider-1-slide-1-layer-11" data-type="group"
 										data-bsh="h:30px,30px,14px,14px;v:30px,30px,14px,14px;b:60px,60px,28px,28px;"
 										data-rsp_ch="on"
 										data-xy="x:r;xo:100px,100px,48px,48px;yo:160px,160px,77px,77px;"
@@ -135,42 +153,44 @@
 										data-vbility="t,t,f,t"
 										data-border="bos:solid;boc:#2c4fc9;bow:1px,1px,1px,1px;bor:32px,32px,32px,32px;"
 										data-frame_0="sX:0.9;sY:0.9;" data-frame_1="sp:1000;"
-										data-frame_999="o:0;st:w;sA:9000;" style="z-index:21;background-color:#000000; display: flex; justify-content: space-between;">
-									
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:21;background-color:#000000; display: flex; justify-content: space-between;">
+
 										<!-- Text Column -->
 										<div class="text-column">
 											<rs-layer id="slider-1-slide-1-layer-12" data-type="text" data-rsp_ch="on"
 												data-xy="x:r;xo:120px,120px,57px,57px;yo:40px,40px,18px,18px;"
 												data-text="w:normal;s:20,20,9,9;l:25,25,12,12;fw:600;"
-												data-frame_999="o:0;st:w;" style="z-index:17;font-family:'IBM Plex Sans';">
+												data-frame_999="o:0;st:w;"
+												style="z-index:17;font-family:'IBM Plex Sans';">
 												Book an appointment
 											</rs-layer>
-									
-											<a id="slider-1-slide-1-layer-13" class="rs-layer" href="tel:+61383766284" target="_self"
-												data-type="text" data-color="#E77523" data-rsp_ch="on"
+
+											<a id="slider-1-slide-1-layer-13" class="rs-layer" href="tel:+61383766284"
+												target="_self" data-type="text" data-color="#E77523" data-rsp_ch="on"
 												data-xy="x:r;xo:120px,120px,57px,57px;yo:71px,71px,34px,34px;"
 												data-text="w:normal;s:24,24,11,11;l:34,34,15,15;fw:600;"
 												data-frame_999="o:0;st:w;"
-												style="z-index:18;font-family:'IBM Plex Sans';">+61 (0) 383 766 284
+												style="z-index:18;font-family:'IBM Plex Sans';">+91 7448744874
 											</a>
-									
-											<rs-layer id="slider-1-slide-1-layer-14" data-type="text" data-color="#a6b7f5"
-												data-rsp_ch="on"
+
+											<rs-layer id="slider-1-slide-1-layer-14" data-type="text"
+												data-color="#a6b7f5" data-rsp_ch="on"
 												data-xy="x:r;xo:120px,120px,57px,57px;yo:110px,110px,53px,53px;"
 												data-text="w:normal;s:16,16,7,7;l:25,25,12,12;fw:600;"
-												data-frame_999="o:0;st:w;" style="z-index:19;font-family:'IBM Plex Sans';">
+												data-frame_999="o:0;st:w;"
+												style="z-index:19;font-family:'IBM Plex Sans';">
 												Monday - Sunday: 8am - 8pm
 											</rs-layer>
 										</div>
-									
+
 										<!-- Button Column -->
 										<div class="button-column">
 											<rs-layer id="slider-1-slide-1-layer-15" data-type="button" data-rsp_ch="on"
 												data-xy="x:r;xo:120px,120px,57px,57px;yo:150px,150px,73px,73px;"
 												data-text="w:normal;s:20,20,9,9;l:0,0,12,12;"
-												data-dim="w:auto;h:60px,60px,30px,30px;"
-												data-border="bor:0;" data-frame_999="o:0;st:w;"
-												style="z-index:20;">
+												data-dim="w:auto;h:60px,60px,30px,30px;" data-border="bor:0;"
+												data-frame_999="o:0;st:w;" style="z-index:20;">
 												<div class="col-12 tablet-one mobile-one">
 													<div class="mcb-column-inner">
 														<a class="button button_theme button_size_2" href="#"
@@ -181,11 +201,11 @@
 												</div>
 											</rs-layer>
 										</div>
-									
+
 									</rs-group>
-									
-									
-									
+
+
+
 									<!--
 
 										-->
@@ -274,7 +294,7 @@
 		<div id="Content" role="main">
 
 
-			<div class="section mcb-section mcb_section_custom20 default-width">
+			<div class="section mcb-section mcb_section_custom20 default-width linecleandiv">
 				<div class="section_wrapper">
 					<div class="col-12 tablet-one mobile-one clearfix" data-desktop-col="one"
 						data-tablet-col="tablet-one" data-mobile-col="mobile-one">
@@ -367,15 +387,16 @@
 							</div>
 							<div class="col-md-4 mcb_item_custom213 tablet-one mobile-one mfn-item-inline">
 								<div class="mcb-column_inner_custom213"> <a class="button button_theme button_size_2"
-										href="content/carwash3/about.html"><span class="button_label">About
+										href=""><span class="button_label"
+											style="  color: #FFF ;  border-radius: 25px ">About
 											us</span></a> </div>
 							</div>
 							<div class="col-md-6 mcb_item_custom214 tablet-two-third mobile-one column_icon_box_2">
 								<div class=" mcb-column_inner_custom214">
 									<a href="#">
 										<div
-											class="mfn-icon-box mfn-icon-box-left mfn-icon-box-center mfn-icon-box-box-scale">
-											<div class="icon-wrapper"><img class="scale-with-grid"
+											class="mfn-icon-box mfn-icon-box-left mfn-icon-box-center mfn-icon-box-box-scale cmr-arrow-btn">
+											<div class="icon-wrapper"><img class="scale-with-grid "
 													src="content/carwash3/images/carwash3-icon7.svg"
 													alt="carwash3-icon7" width="" height="" /> </div>
 											<div class="desc-wrapper">
@@ -621,7 +642,8 @@
 							</div>
 							<div class="col-12 mcb_item_custom415 tablet-one mobile-one column_heading">
 								<div class="mcb-column-inner">
-									<h3 class="title">Sed cras pellentesque amet ultrices diam at. Mauris, ornare
+									<h3 class="title" style="color: #E77523;">Sed cras pellentesque amet ultrices diam
+										at. Mauris, ornare
 										ultrices ultricies nulla. <span style="color:#FFF;">Risus consequat eros id amet
 											dictum in quis vel congue.</span> Id posuere vestibulum elit luctus dapibus
 										varius donec est nulla. Facilisis nulla vel eget fermentum vel molestie. Quis
@@ -644,7 +666,8 @@
 							</div>
 							<div class="col-12 mcb_item_custom415 tablet-one mobile-one column_heading">
 								<div class="mcb-column-inner">
-									<h3 class="title">Sed cras pellentesque amet ultrices diam at. Mauris, ornare
+									<h3 class="title" style="color: #E77523;">Sed cras pellentesque amet ultrices diam
+										at. Mauris, ornare
 										ultrices ultricies nulla. <span style="color:#FFF;">Risus consequat eros id amet
 											dictum in quis vel congue.</span> Id posuere vestibulum elit luctus dapibus
 										varius donec est nulla. Facilisis nulla vel eget fermentum vel molestie. Quis
@@ -1034,7 +1057,7 @@
 									<div class="counter counter_vertical animate-math">
 										<div class="desc_wrapper">
 											<div class="number-wrapper"> <span class="label prefix">Over </span><span
-													class="number" data-to="5000">5000</span> </div>
+													class="number" data-to="5000">5000</span>+ </div>
 										</div>
 									</div>
 								</div>
@@ -1047,7 +1070,7 @@
 							<div class="col-12 mcb_item_custom401 tablet-one mobile-one">
 								<div class="mcb-column-inner">
 									<div class="column_attr mfn-inline-editor clearfix">
-										<p> 20 daily car </p>
+										<p> 50 daily car </p>
 									</div>
 								</div>
 							</div>
@@ -1063,13 +1086,14 @@
 
 			<!-- Services  -->
 
-			<div class="spacebar" style="padding: 5rem;"></div>
-			<div id="services" class="section mcb-section mcb-section_custom38 default-width">
+			<div class="spacebar" style="padding: 5rem;background-color: #FFF;"></div>
+			<div id="services" style="background-color: #FFF;"
+				class="section mcb-section mcb-section_custom38 default-width">
 				<div style="display: flex;justify-content: center;align-items: center;">
 					<h1 style="color: #E77523;">OUR SERVICES </h1>
 				</div>
+				<div class="spacebar" style="padding: 2rem;"></div>
 			</div>
-			<div class="spacebar" style="padding: 2rem;"></div>
 			<div class="section_wrapper row mcb-section_inner_custom38">
 				<div class="col-12 mcb-wrap_custom102 tablet-one mobile-one clearfix" data-desktop-col="one"
 					data-tablet-col="tablet-one" data-mobile-col="mobile-one">
@@ -1228,7 +1252,7 @@
 					data-tablet-col="tablet-one" data-mobile-col="mobile-one">
 					<div class="mcb-wrap_inner mcb-wrap_inner_custom79 row no-gutters">
 						<div
-							class="col-3 mcb_item_custom160 tablet-one-fourth mobile-one column_icon_box_2 hide-mobile">
+							class=" mcb_item_custom160 tablet-one-fourth mobile-one column_icon_box_2 hide-mobile">
 							<div class="mcb-column_inner_custom160">
 								<div class="mfn-icon-box mfn-icon-box-top mfn-icon-box-start">
 									<div class="icon-wrapper"><img class="scale-with-grid"
@@ -1238,10 +1262,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-2 mcb_item_custom172 tablet-one-fourth mobile-one">
+						<div class="col-2 mcb_item_custom172 tablet-one-fourth mobile-one image-content-webpack">
 							<div class="mcb-column_inner_custom172">
 								<div
-									class="image_frame element_classes image_item no_link scale-with-grid alignnone no_border">
+									class="image_frame element_classes image_item no_link scale-with-grid alignnone no_border ">
 									<div class="image_wrapper"><img class="scale-with-grid"
 											src="content/carwash3/images/carwash3-offer-pic3.webp"
 											alt="carwash3-offer-pic3" width="780" height="780" /> </div>
@@ -1258,7 +1282,7 @@
 											<h3 style="color:#FFFF;">COATING</h3>
 											<hr class="no_line" style="margin: 0 auto 5px auto" />
 											<div class="row">
-												<div class="col-6">
+												<div class="">
 													<ul style="list-style-type:none; padding-left:0;">
 														<li><i class="uil uil-car-sideview"
 																style="color: #E77523;"></i>&nbsp;&nbsp;&nbsp; Diamond99
@@ -1279,7 +1303,7 @@
 
 													</ul>
 												</div>
-												<div class="col-6">
+												<div class="">
 													<ul style="list-style-type:none; padding-left:0;">
 
 														<li><i class="uil uil-car-sideview"
@@ -1309,7 +1333,7 @@
 					data-tablet-col="tablet-one" data-mobile-col="mobile-one">
 					<div class="mcb-wrap_inner mcb-wrap_inner_custom80 row no-gutters">
 						<div
-							class="col-3 mcb_item_custom161 tablet-one-fourth mobile-one column_icon_box_2 hide-mobile">
+							class=" mcb_item_custom161 tablet-one-fourth mobile-one column_icon_box_2 hide-mobile">
 							<div class=" mcb-column_inner_custom161">
 								<div class="mfn-icon-box mfn-icon-box-top mfn-icon-box-start">
 									<div class="icon-wrapper"><img class="scale-with-grid"
@@ -1319,7 +1343,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-2 mcb_item_custom173 tablet-one-fourth mobile-one">
+						<div class="image-content-webpack col-2 mcb_item_custom173 tablet-one-fourth mobile-one">
 							<div class=" mcb-column_inner_custom173">
 								<div
 									class="image_frame element_classes image_item no_link scale-with-grid alignnone no_border">
@@ -1340,7 +1364,7 @@
 											<hr class="no_line" style="margin: 0 auto 5px auto" />
 
 											<div class="row">
-												<div class="col-6">
+												<div class="">
 													<ul style="list-style-type:none; padding-left:0;">
 														<li><i class="uil uil-car-sideview" style="color: #E77523;"></i>
 															EXOTIC DIAMOND WASH
@@ -1354,7 +1378,7 @@
 
 													</ul>
 												</div>
-												<div class="col-6">
+												<div class="">
 													<ul style="list-style-type:none; padding-left:0;">
 
 														<li><i class="uil uil-car-sideview"
@@ -1380,7 +1404,7 @@
 					data-tablet-col="tablet-one" data-mobile-col="mobile-one">
 					<div class="mcb-wrap_inner mcb-wrap_inner_custom81 row no-gutters">
 						<div
-							class="col-3 mcb_item_custom162 tablet-one-fourth mobile-one column_icon_box_2 hide-mobile">
+							class="mcb_item_custom162 tablet-one-fourth mobile-one column_icon_box_2 hide-mobile">
 							<div class=" mcb-column_inner_custom162">
 								<div class="mfn-icon-box mfn-icon-box-top mfn-icon-box-start">
 									<div class="icon-wrapper"><img class="scale-with-grid"
@@ -1390,7 +1414,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-2 mcb_item_custom174 tablet-one-fourth mobile-one">
+						<div class="image-content-webpack col-2 mcb_item_custom174 tablet-one-fourth mobile-one">
 							<div class=" mcb-column_inner_custom174">
 								<div
 									class="image_frame element_classes image_item no_link scale-with-grid alignnone no_border">
@@ -1410,7 +1434,7 @@
 											<h3 style="color:#FFF;">TYRE CARE</h3>
 											<hr class="no_line" style="margin: 0 auto 5px auto" />
 											<div class="row">
-												<div class="col-6">
+												<div class="">
 													<ul style="list-style-type:none; padding-left:0;">
 														<li><i class="uil uil-car-sideview"
 																style="color: #E77523;"></i>&nbsp;&nbsp;&nbsp;
@@ -1436,7 +1460,7 @@
 						data-tablet-col="tablet-one" data-mobile-col="mobile-one">
 						<div class="mcb-wrap_inner mcb-wrap_inner_custom82 row no-gutters">
 							<div
-								class="col-3 mcb_item_custom163 tablet-one-fourth mobile-one column_icon_box_2 hide-mobile">
+								class=" mcb_item_custom163 tablet-one-fourth mobile-one column_icon_box_2 hide-mobile">
 								<div class=" mcb-column_inner_custom163">
 									<div class="mfn-icon-box mfn-icon-box-top mfn-icon-box-start">
 										<div class="icon-wrapper"><img class="scale-with-grid"
@@ -1446,7 +1470,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-2 mcb_item_custom175 tablet-one-fourth mobile-one">
+							<div class="image-content-webpack col-2 mcb_item_custom175 tablet-one-fourth mobile-one">
 								<div class=" mcb-column_inner_custom175">
 									<div
 										class="image_frame element_classes image_item no_link scale-with-grid alignnone no_border">
@@ -1456,19 +1480,6 @@
 									</div>
 								</div>
 							</div>
-							<!-- <div class="col-md-7 mcb_item_custom385 tablet-one-second mobile-one column_icon_box_2">
-								<div class="mcb-column-inner">
-									<div class="mfn-icon-box mfn-icon-box-left mfn-icon-box-start">
-										<div class="icon-wrapper"> <i class="icon-minus-fine" aria-hidden="true"></i> </div>
-										<div class="desc-wrapper">
-											<h6 class="title">04</h6>
-											<div class="desc">
-												<h3 style="color:#FFF;">OTHERS</h3>
-												<hr class="no_line" style="margin: 0 auto 5px auto" /> Quisque mauris eget non mauris sed volutpat nunc nunc. Nec proin sagittis porta natoque consequat cras enim. Nibh accumsan enim eu gravida tristique eget nunc suspendisse. Orci nullam diam, proin senectus rhoncus sed cursus pretium facilisis. Et tellus dictum convallis quis vivamus massa cras. </div>
-										</div>
-									</div>
-								</div>
-							</div> -->
 							<div class="col-md-7 mcb_item_custom385 tablet-one-second mobile-one column_icon_box_2">
 								<div class="mcb-column-inner">
 									<div class="mfn-icon-box mfn-icon-box-left mfn-icon-box-start">
@@ -1480,7 +1491,7 @@
 												<h3 style="color:#FFF;">OTHERS</h3>
 												<hr class="no_line" style="margin: 0 auto 5px auto" />
 												<div class="row">
-													<div class="col-6">
+													<div class="">
 														<ul style="list-style-type:none; padding-left:0;">
 															<li><i class="uil uil-car-sideview"
 																	style="color: #E77523;"></i>&nbsp;&nbsp;&nbsp;
@@ -1497,7 +1508,7 @@
 
 														</ul>
 													</div>
-													<div class="col-6">
+													<div class="">
 														<ul style="list-style-type:none; padding-left:0;">
 
 															<li><i class="uil uil-car-sideview"
@@ -1527,15 +1538,16 @@
 		<div id="work" class="col-12 tablet-one mobile-one clearfix" data-desktop-col="one" data-tablet-col="tablet-one"
 			data-mobile-col="mobile-one">
 			<div style="display: flex;justify-content: center;align-items: center;">
-				<h1 style="color: #E77523;">OUR WORK</h1>
+				<h1 style="color: #E77523;">OUR BRANCH</h1>
 			</div>
 		</div>
 		<div class="spacebar" style="padding: 2rem;"></div>
 		<div class="mcb-wrap_inner row">
 			<div class="col-md-3 mcb_item_custom183 tablet-one-second mobile-one column_icon_box_2">
-				<div class=" mcb-column_inner_custom183">
+				<div class="mcb-column_inner_custom183">
 					<div class="mfn-icon-box mfn-icon-box-top mfn-icon-box-center mfn-icon-box-icon-scale">
-						<div class="icon-wrapper"><img src="content/carwash3/images/carwash3-works-pic1.webp" />
+						<div class="icon-wrapper"
+							style="background-image: url('Assets/branch/1.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; height: fill-content;">
 						</div>
 						<!-- <div class="desc-wrapper">
 								<div class="desc"> Eget sagittis nunc etiam facilisi neque, sed. Et placerat. </div>
@@ -1546,8 +1558,9 @@
 			<div class="col-md-3 mcb_item_custom184 tablet-one-second mobile-one column_icon_box_2">
 				<div class=" mcb-column_inner_custom184">
 					<div class="mfn-icon-box mfn-icon-box-top mfn-icon-box-center mfn-icon-box-icon-scale">
-						<div class="icon-wrapper"><img class="scale-with-grid"
-								src="content/carwash3/images/carwash3-works-pic2.webp" /> </div>
+						<div class="icon-wrapper"
+							style="background-image: url('Assets/branch/2.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; ">
+						</div>
 						<!-- <div class="desc-wrapper">
 								<div class="desc"> Et egestas faucibus vel sed felis. Est dolor aliquam. </div>
 							</div> -->
@@ -1557,8 +1570,9 @@
 			<div class="col-md-3 mcb_item_custom185 tablet-one-second mobile-one column_icon_box_2">
 				<div class=" mcb-column_inner_custom185">
 					<div class="mfn-icon-box mfn-icon-box-top mfn-icon-box-center mfn-icon-box-icon-scale">
-						<div class="icon-wrapper"><img class="scale-with-grid"
-								src="content/carwash3/images/carwash3-works-pic3.webp" /> </div>
+						<div class="icon-wrapper"
+							style="background-image: url('Assets/branch/3.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; ">
+						</div>
 						<!-- <div class="desc-wrapper">
 								<div class="desc"> Quis erat rhoncus tortor morbi aliquam elit at felis. </div>
 							</div> -->
@@ -1568,8 +1582,9 @@
 			<div class="col-md-3 mcb_item_custom186 tablet-one-second mobile-one column_icon_box_2">
 				<div class=" mcb-column_inner_custom186">
 					<div class="mfn-icon-box mfn-icon-box-top mfn-icon-box-center mfn-icon-box-icon-scale">
-						<div class="icon-wrapper"><img class="scale-with-grid"
-								src="content/carwash3/images/carwash3-works-pic4.webp" /> </div>
+						<div class="icon-wrapper"
+							style="background-image: url('Assets/branch/4.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; ">
+						</div>
 						<!-- <div class="desc-wrapper">
 								<div class="desc"> Etiam lectus congue proin eget sem. Facilisis lorem. </div>
 							</div> -->
@@ -1579,8 +1594,9 @@
 			<div class="col-md-3 mcb_item_custom187 tablet-one-second mobile-one column_icon_box_2">
 				<div class=" mcb-column_inner_custom187">
 					<div class="mfn-icon-box mfn-icon-box-top mfn-icon-box-center mfn-icon-box-icon-scale">
-						<div class="icon-wrapper"><img class="scale-with-grid"
-								src="content/carwash3/images/carwash3-works-pic5.webp" /> </div>
+						<div class="icon-wrapper"
+							style="background-image: url('Assets/branch/5.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; ">
+						</div>
 						<!-- <div class="desc-wrapper">
 								<div class="desc"> Odio ut et risus in nunc urna. Mattis pellentesque. </div>
 							</div> -->
@@ -1590,8 +1606,9 @@
 			<div class="col-md-3 mcb_item_custom188 tablet-one-second mobile-one column_icon_box_2">
 				<div class=" mcb-column_inner_custom188">
 					<div class="mfn-icon-box mfn-icon-box-top mfn-icon-box-center mfn-icon-box-icon-scale">
-						<div class="icon-wrapper"><img class="scale-with-grid"
-								src="content/carwash3/images/carwash3-offer-pic4.webp" /> </div>
+						<div class="icon-wrapper"
+							style="background-image: url('Assets/branch/6.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; ">
+						</div>
 						<!-- <div class="desc-wrapper">
 								<div class="desc"> Nam arcu platea ac nunc maecenas. Curabitur in. </div>
 							</div> -->
@@ -1601,8 +1618,9 @@
 			<div class="col-md-3 mcb_item_custom188 tablet-one-second mobile-one column_icon_box_2">
 				<div class=" mcb-column_inner_custom188">
 					<div class="mfn-icon-box mfn-icon-box-top mfn-icon-box-center mfn-icon-box-icon-scale">
-						<div class="icon-wrapper"><img class="scale-with-grid"
-								src="content/carwash3/images/carwash3-offer-pic4.webp" /> </div>
+						<div class="icon-wrapper"
+							style="background-image: url('Assets/branch/7.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; ">
+						</div>
 						<!-- <div class="desc-wrapper">
 								<div class="desc"> Nam arcu platea ac nunc maecenas. Curabitur in. </div>
 							</div> -->
@@ -1612,8 +1630,9 @@
 			<div class="col-md-3 mcb_item_custom188 tablet-one-second mobile-one column_icon_box_2">
 				<div class=" mcb-column_inner_custom188">
 					<div class="mfn-icon-box mfn-icon-box-top mfn-icon-box-center mfn-icon-box-icon-scale">
-						<div class="icon-wrapper"><img class="scale-with-grid"
-								src="content/carwash3/images/carwash3-offer-pic4.webp" /> </div>
+						<div class="icon-wrapper"
+							style="background-image: url('Assets/branch/8.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; ">
+						</div>
 						<!-- <div class="desc-wrapper">
 								<div class="desc"> Nam arcu platea ac nunc maecenas. Curabitur in. </div>
 							</div> -->
@@ -1625,39 +1644,94 @@
 	<div class="spacebar" style="padding: 2rem;"></div>
 
 	<!-- mapping -->
-		
-		<div class="container">
-			<img src="images/googlemap.png" alt="">
-			<h2 style="color: #FFF;">Shop Locations</h2>
-			<div class="list-container">
-				
+	<div id="work" class="col-12 tablet-one mobile-one clearfix" data-desktop-col="one" data-tablet-col="tablet-one"
+		data-mobile-col="mobile-one">
+		<div style="display: flex;justify-content: center;align-items: center;">
+			<h1 style="color: #E77523;">OUR LOCATIONS</h1>
+		</div>
+	</div>
+	<div class="container1">
+		<div class="list-container">
+			<div class="search-container">
+				<input style="background-color: white;border: #000000; color: #000000;" type="text" class="search-bar"
+					placeholder="Type a postcode or address..." onkeyup="filterShops()">
+			</div>
+			<div class="scrollable-list">
 				<ul class="shop-list">
-					<li><a href="#" class="shop-link" data-lat="11.0168" data-lng="76.9558">DETAILING WOLVES - Coimbatore</a></li>
-					<li><a href="#" class="shop-link" data-lat="13.0827" data-lng="80.2707">DETAILING WOLVES - Chennai</a></li>
-					<li><a href="#" class="shop-link" data-lat="8.7294" data-lng="77.9194">DETAILING WOLVES - Kanyakumari</a></li>
+					<div class="al-it">
+						<li><a href="#" class="shop-link" data-lat="11.0168" data-lng="76.9558"><img
+									src="Assets/image.png" style="width: 50px;" alt=""> &nbsp; DETAILING WOLVES -
+								Coimbatore</a></li>
+					</div>
+					<div class="al-it">
+						<li><a href="#" class="shop-link" data-lat="13.0827" data-lng="80.2707"><img
+									src="Assets/image.png" style="width: 50px;" alt=""> &nbsp; DETAILING WOLVES -
+								Chennai</a></li>
+					</div>
+					<div class="al-it">
+						<li><a href="#" class="shop-link" data-lat="12.9716" data-lng="77.5946"><img
+									src="Assets/image.png" style="width: 50px;" alt=""> &nbsp; DETAILING WOLVES -
+								Bangalore</a></li>
+					</div>
+					<div class="al-it">
+						<li><a href="#" class="shop-link" data-lat="28.7041" data-lng="77.1025"><img
+									src="Assets/image.png" style="width: 50px;" alt=""> &nbsp; DETAILING WOLVES -
+								New Delhi</a></li>
+					</div>
+					<div class="al-it">
+						<li><a href="#" class="shop-link" data-lat="" data-lng="72.8777"><img src="Assets/image.png"
+									style="width: 50px;" alt=""> &nbsp; DETAILING WOLVES - Mumbai</a></li>
+					</div>
+					<div class="al-it">
+						<li><a href="#" class="shop-link" data-lat="22.5726" data-lng="88.3639"><img
+									src="Assets/image.png" style="width: 50px;" alt=""> &nbsp; DETAILING WOLVES -
+								Kolkata</a></li>
+					</div>
+					<div class="al-it">
+						<li><a href="#" class="shop-link" data-lat="23.0225" data-lng="72.5714"><img
+									src="Assets/image.png" style="width: 50px;" alt=""> &nbsp; DETAILING WOLVES -
+								Ahmedabad</a></li>
+					</div>
+					<div class="al-it">
+						<li><a href="#" class="shop-link" data-lat="17.3850" data-lng="78.4867"><img
+									src="Assets/image.png" style="width: 50px;" alt=""> &nbsp; DETAILING WOLVES -
+								Hyderabad</a></li>
+					</div>
+					<div class="al-it">
+						<li><a href="#" class="shop-link" data-lat="26.9124" data-lng="75.7873"><img
+									src="Assets/image.png" style="width: 50px;" alt=""> &nbsp; DETAILING WOLVES -
+								Jaipur</a></li>
+					</div>
+					<div class="al-it">
+						<li><a href="#" class="shop-link" data-lat="9.9312" data-lng="76.2673"><img
+									src="Assets/image.png" style="width: 50px;" alt=""> &nbsp; DETAILING WOLVES -
+								Kochi</a></li>
+					</div>
 				</ul>
 			</div>
-			<div class="map-container">
-				<div id="map" class="map"></div>
-			</div>
 		</div>
-	
+		<div class="map-container">
+			<div id="map" class="map"></div>
+		</div>
+	</div>
 
 
-	
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
-    <script src="js/map.js"></script>
-	 <!-- mapping end -->
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+	<script src="js/map.js"></script>
+	<!-- mapping end -->
 
 
 	<!-- Leaflet JS -->
 	<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 	<script src="script.js"></script>
 
-	<div class="spacebar" style="padding: 2rem;"></div>
+	<div class="spacebar" style="padding: 4rem;"></div>
 	<!-- footer  -->
 
-	<div id="contact" class="section mcb-section mcb-section_custom42 default-width">
+	<!-- <div id="contact" class="section mcb-section mcb-section_custom42 default-width" style="background-color: #E77523;">
 		<div class="section_wrapper mcb-section_inner_custom42 row no-gutters">
 			<div class="col-md-3 mcb_wrap_custom8 tablet-one-third mobile-one clearfix" data-desktop-col="one-fourth"
 				data-tablet-col="tablet-one-third" data-mobile-col="mobile-one">
@@ -1679,12 +1753,12 @@
 				<div class="mcb-wrap_inner mcb-wrap_inner_custom114">
 					<div class="col-12 mcb_item_custom239 tablet-one mobile-one">
 						<div class=" mcb-column_inner_custom239">
-							<!-- <div
+							<div
 										class="image_frame element_classes image_item no_link scale-with-grid alignnone no_border">
 										<div class="image_wrapper"><img class="scale-with-grid"
 												src="content/carwash3/images/carwash3-book-pic1.webp"
 												alt="carwash3-book-pic1" width="780" height="593" /> </div>
-									</div> -->
+									</div>
 						</div>
 					</div>
 				</div>
@@ -1699,10 +1773,17 @@
 				</div>
 			</div>
 		</div>
+	</div> -->
 	</div>
-	</div>
-	<footer id="Footer" class="clearfix" role="contentinfo">
-		<div class="container">
+
+
+
+	<!-- Footer  -->
+
+	<footer id="Footer" class="clearfix"
+		style="background-color: #000000; border: 1px solid #E77523; color: #FFFFFF;border-radius: 10px; display: flex;justify-content: center;flex-direction: column;align-items: center;"
+		role="contentinfo">
+		<div class="containerr">
 			<div class="row mcb-wrap_inner">
 				<div class="col-12">
 					<hr class="no_line" style="margin:0 auto 120px">
@@ -1710,8 +1791,8 @@
 				<div class="col-md-4">
 					<div class="mcb-column-inner">
 						<p> Call us if you need any help </p>
-						<h4><a href="tel:+61383766284" data-type="tel" data-id="tel:+61383766284">+61 (0) 383 766
-								284</a></h4>
+						<h4><a href="tel:+91 7448744874" data-type="tel" data-id="tel:+91 7448744874"
+								style="color: #FFF;">+91 7448744874</a></h4>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -1719,14 +1800,16 @@
 						<figure class="wp-block-image size-full">
 							<a href="#Header_wrapper"><img style="height: 150px;width: 200px;"
 									src="content/carwash3/images/logo-alter.png" class="wp-image-71" /></a>
+
 						</figure>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="mcb-column-inner">
-						<p> Level 13, 2 Elizabeth St,
-							<br> Melbourne, Victoria 3000,
-							<br> Australia
+						<p>No 46A, R.K Complex Backside,
+							<br> Super garden Avenue, Opposite to Jaycee school,
+							<br> Vadavalli to Edayarpalayam road,
+							<br> Coimbatore-641041.
 						</p>
 					</div>
 				</div>
@@ -1740,8 +1823,8 @@
 				<div class="column one mobile-one">
 					<div class="mcb-column-inner"> <a id="back_to_top" class="footer_button" href="#"><i
 								class="icon-up-open-big" aria-label="Back to top icon"></i></a>
-						<div class="copyright"> &copy; 2022 - BeTheme. Muffin group - HTML by <a target="_blank"
-								rel="nofollow" href="https://1.envato.market/9ZxXY">BeantownThemes</a> </div>
+						<div class="copyright"> &copy; DetailingWolves Crafted by Redcubix <a target="_blank"
+								rel="nofollow" href=""></a> </div>
 						<ul class="social" role="navigation" aria-label="Social Menu"></ul>
 					</div>
 				</div>
@@ -1761,6 +1844,7 @@
 		<div class="menu_wrapper" role="navigation" aria-label="Main Menu"></div>
 		<ul class="social" role="navigation" aria-label="Social Menu"></ul>
 	</div>
+
 	<!-- JS -->
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery-migrate-3.4.0.min.js"></script>
@@ -1776,41 +1860,57 @@
 	<script type="text/javascript">
 
 
-window.addEventListener('scroll', function() {
-    const topBar = document.getElementById('Top_bar');
-    if (window.scrollY > 0) {
-        topBar.style.borderBottom = '1px solid #e77523'; // Show the border when scrolling
-    } else {
-        topBar.style.borderBottom = 'none'; // Hide the border when at the top
-    }
-});
+		window.addEventListener('scroll', function () {
+			const topBar = document.getElementById('Top_bar');
+			if (window.scrollY > 0) {
+				topBar.style.borderBottom = '1px solid #e77523'; // Show the border when scrolling
+			} else {
+				topBar.style.borderBottom = 'none'; // Hide the border when at the top
+			}
+		});
 
-let lastScrollTop = 0;
-const topBar = document.getElementById('Top_bar');
+		let lastScrollTop = 0;
+		const topBar = document.getElementById('Top_bar');
 
-window.addEventListener('scroll', function() {
-    let scrollTop = window.scrollY;
+		window.addEventListener('scroll', function () {
+			let scrollTop = window.scrollY;
 
-    if (scrollTop > lastScrollTop) {
-        // Scroll down - Hide top bar
-        topBar.style.top = '-100px'; // Adjust the value based on your top bar's height
-    } else {
-        // Scroll up - Show top bar
-        topBar.style.top = '0';
-        topBar.classList.add('scrolled'); // Add border when scrolled
-    }
+			if (scrollTop > lastScrollTop) {
+				// Scroll down - Hide top bar
+				topBar.style.top = '-100px'; // Adjust the value based on your top bar's height
+			} else {
+				// Scroll up - Show top bar
+				topBar.style.top = '0';
+				topBar.classList.add('scrolled'); // Add border when scrolled
+			}
 
-    // If scrolled to the top, remove the border
-    if (scrollTop === 0) {
-        topBar.classList.remove('scrolled');
-    }
+			// If scrolled to the top, remove the border
+			if (scrollTop === 0) {
+				topBar.classList.remove('scrolled');
+			}
 
-    lastScrollTop = scrollTop;
-});
-
-
+			lastScrollTop = scrollTop;
+		});
 
 
+
+		function filterShops() {
+			// Get the search term
+			const searchTerm = document.querySelector('.search-bar').value.toLowerCase();
+
+			// Get all shop items
+			const shops = document.querySelectorAll('.al-it');
+
+			// Loop through the shop items and hide those that don't match the search term
+			shops.forEach(shop => {
+				const shopName = shop.textContent.toLowerCase();
+				if (shopName.includes(searchTerm)) {
+					shop.style.display = ''; // Show the item
+				} else {
+					shop.style.display = 'none'; // Hide the item
+				}
+			});
+		}
 
 		function initMap() {
 			const center = [20.5937, 78.9629]; // Center of India, change to your desired location

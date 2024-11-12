@@ -148,6 +148,15 @@
   background-color: var(--background-color-main-dark);
   color: var(--text-color-dark);
 }
+.white-background .container{
+  background-color: var(--background-color-main-light);
+
+}
+
+.black-background .container{
+  background-color: var(--background-color-main-dark);
+ 
+}
 
 
 /* Slider text colors for themes */

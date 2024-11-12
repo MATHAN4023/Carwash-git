@@ -43,7 +43,7 @@
 
 
 #theme-toggle {
-  padding: 1.5rem;
+  padding: 0.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,6 +279,7 @@ body {
 
 #Top_bar.scrolled {
   /* border-bottom: 3px solid #e77523;  */
+  height: 100px;
 }
 
 

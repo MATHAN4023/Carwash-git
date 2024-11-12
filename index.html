@@ -104,12 +104,16 @@
 											<li><a href="#work"><span>WORKS</span></a></li>
 											<li><a href="#Footer"><span>CONTACT</span></a></li>
 											<li>
-												<div id="theme-toggle">
-													<img id="dark-icon" src="./Assets/PNGS/brightness.png"
-														alt="dark Theme">
-													<img id="light-icon" src="./Assets/PNGS/themes.png"
-														alt="light Theme" style="display: none;">
-												</div>
+												<a href="">
+													<div id="theme-toggle">
+														<img id="dark-icon" src="./Assets/PNGS/brightness.png"
+															alt="dark Theme">
+														<img id="light-icon" src="./Assets/PNGS/themes.png"
+															alt="light Theme" style="display: none;">
+													</div>
+
+												</a>
+												
 											</li>
 										</ul>
 									</nav>
@@ -1912,27 +1916,34 @@
 		// });
 
 		let lastScrollTop = 0;
-		const topBar = document.getElementById('Top_bar');
+const topBar = document.getElementById('Top_bar');
 
-		window.addEventListener('scroll', function () {
-			let scrollTop = window.scrollY;
+// Listen for the scroll event
+window.addEventListener('scroll', function () {
+  let scrollTop = window.scrollY;
 
-			if (scrollTop > lastScrollTop) {
-				// Scroll down - Hide top bar
-				topBar.style.top = '-100px'; // Adjust the value based on your top bar's height
-			} else {
-				// Scroll up - Show top bar
-				topBar.style.top = '0';
-				topBar.classList.add('scrolled'); // Add border when scrolled
-			}
+  // Increase the height of the top bar while scrolling down
+  const newHeight = Math.min(80, 60 + scrollTop / 10); // Adjust the divisor (10) for desired growth speed
+  topBar.style.height = `${newHeight}px`;
 
-			// If scrolled to the top, remove the border
-			if (scrollTop === 0) {
-				topBar.classList.remove('scrolled');
-			}
+  if (scrollTop > lastScrollTop) {
+    // Scroll down - Optionally hide top bar or change position
+    topBar.style.top = `-${newHeight}px`; // Adjust top position based on the increased height
+  } else {
+    // Scroll up - Show top bar
+    topBar.style.top = '0';
+    topBar.classList.add('scrolled'); // Add border when scrolled
+  }
 
-			lastScrollTop = scrollTop;
-		});
+  // If scrolled to the top, remove the border
+  if (scrollTop === 0) {
+    topBar.classList.remove('scrolled');
+    topBar.style.height = '100px'; // Reset to the default height
+  }
+
+  lastScrollTop = scrollTop;
+});
+
 
 
 

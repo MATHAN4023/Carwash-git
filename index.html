@@ -104,17 +104,14 @@
 											<li><a href="#work"><span>WORKS</span></a></li>
 											<li><a href="#Footer"><span>CONTACT</span></a></li>
 											<li>
-												<a href="">
+												<a href="#">
 													<div id="theme-toggle">
-														<img id="dark-icon" src="./Assets/PNGS/brightness.png"
-															alt="dark Theme">
-														<img id="light-icon" src="./Assets/PNGS/themes.png"
-															alt="light Theme" style="display: none;">
+														<img id="dark-icon" src="./Assets/PNGS/brightness.png" alt="dark Theme">
+														<img id="light-icon" src="./Assets/PNGS/themes.png" alt="light Theme" style="display: none;">
 													</div>
-
 												</a>
-												
 											</li>
+											
 										</ul>
 									</nav>
 
@@ -1751,7 +1748,7 @@
 						<li><a href="#" class="shop-link" data-lat="" data-lng="72.8777"><img src="Assets/image.png"
 									style="width: 50px;" alt=""> &nbsp; MUMBAI - INDIA</a></li>
 					</div>
-				
+
 					<div class="al-it">
 						<li><a href="#" class="shop-link" data-lat="9.9312" data-lng="76.2673"><img
 									src="Assets/image.png" style="width: 50px;" alt=""> &nbsp; KOCHI -
@@ -1832,7 +1829,8 @@
 				<div class="col-md-4">
 					<div class="mcb-column-inner">
 						<p>Call us if you need any help</p>
-						<h4><a href="tel:+91 7448744874" data-type="tel" data-id="tel:+91 7448744874" style="color: #E77523;" class="phone-link">+91 7448744874</a></h4>
+						<h4><a href="tel:+91 7448744874" data-type="tel" data-id="tel:+91 7448744874"
+								style="color: #E77523;" class="phone-link">+91 7448744874</a></h4>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -1846,7 +1844,8 @@
 				</div>
 				<div class="col-md-4">
 					<div class="mcb-column-inner">
-						<p>No 46A, R.K Complex Backside,<br> Super garden Avenue, Opposite to Jaycee school,<br> Vadavalli to Edayarpalayam road,<br> Coimbatore-641041.</p>
+						<p>No 46A, R.K Complex Backside,<br> Super garden Avenue, Opposite to Jaycee school,<br>
+							Vadavalli to Edayarpalayam road,<br> Coimbatore-641041.</p>
 					</div>
 				</div>
 				<div class="col-12">
@@ -1858,15 +1857,17 @@
 			<div class="container">
 				<div class="column one mobile-one">
 					<div class="mcb-column-inner">
-						<a id="back_to_top" class="footer_button" href="#"><i class="icon-up-open-big" aria-label="Back to top icon"></i></a>
-						<div class="copyright"> &copy; DetailingWolves Crafted by Redcubix <a target="_blank" rel="nofollow" href=""></a> </div>
+						<a id="back_to_top" class="footer_button" href="#"><i class="icon-up-open-big"
+								aria-label="Back to top icon"></i></a>
+						<div class="copyright"> &copy; DetailingWolves Crafted by Redcubix <a target="_blank"
+								rel="nofollow" href=""></a> </div>
 						<ul class="social" role="navigation" aria-label="Social Menu"></ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-	
+
 	</div>
 	<div id="body_overlay"></div>
 	<div id="Side_slide" class="right dark" data-width="250" aria-expanded="false" role="banner"
@@ -1916,33 +1917,33 @@
 		// });
 
 		let lastScrollTop = 0;
-const topBar = document.getElementById('Top_bar');
+		const topBar = document.getElementById('Top_bar');
 
-// Listen for the scroll event
-window.addEventListener('scroll', function () {
-  let scrollTop = window.scrollY;
+		// Listen for the scroll event
+		window.addEventListener('scroll', function () {
+			let scrollTop = window.scrollY;
 
-  // Increase the height of the top bar while scrolling down
-  const newHeight = Math.min(80, 60 + scrollTop / 10); // Adjust the divisor (10) for desired growth speed
-  topBar.style.height = `${newHeight}px`;
+			// Increase the height of the top bar while scrolling down
+			const newHeight = Math.min(80, 60 + scrollTop / 10); // Adjust the divisor (10) for desired growth speed
+			topBar.style.height = `${newHeight}px`;
 
-  if (scrollTop > lastScrollTop) {
-    // Scroll down - Optionally hide top bar or change position
-    topBar.style.top = `-${newHeight}px`; // Adjust top position based on the increased height
-  } else {
-    // Scroll up - Show top bar
-    topBar.style.top = '0';
-    topBar.classList.add('scrolled'); // Add border when scrolled
-  }
+			if (scrollTop > lastScrollTop) {
+				// Scroll down - Optionally hide top bar or change position
+				topBar.style.top = `-${newHeight}px`; // Adjust top position based on the increased height
+			} else {
+				// Scroll up - Show top bar
+				topBar.style.top = '0';
+				topBar.classList.add('scrolled'); // Add border when scrolled
+			}
 
-  // If scrolled to the top, remove the border
-  if (scrollTop === 0) {
-    topBar.classList.remove('scrolled');
-    topBar.style.height = '100px'; // Reset to the default height
-  }
+			// If scrolled to the top, remove the border
+			if (scrollTop === 0) {
+				topBar.classList.remove('scrolled');
+				topBar.style.height = '100px'; // Reset to the default height
+			}
 
-  lastScrollTop = scrollTop;
-});
+			lastScrollTop = scrollTop;
+		});
 
 
 
@@ -1994,20 +1995,30 @@ window.addEventListener('scroll', function () {
 		window.onload = initMap;
 
 
-		//Theme Button
 		const themeToggleButton = document.getElementById('theme-toggle');
 		const lightIcon = document.getElementById('light-icon');
 		const darkIcon = document.getElementById('dark-icon');
 
 		// Set initial state based on theme
 		const isDarkMode = document.body.classList.contains('dark-mode');
-		lightIcon.style.display = isDarkMode ? 'block' : 'none';
-		darkIcon.style.display = isDarkMode ? 'none' : 'block';
+
+		// Set icon visibility on page load
+		if (isDarkMode) {
+			lightIcon.style.display = 'block';
+			darkIcon.style.display = 'none';
+		} else {
+			lightIcon.style.display = 'none';
+			darkIcon.style.display = 'block';
+		}
 
 		themeToggleButton.addEventListener('click', () => {
+			// Toggle the dark mode class on the body
 			document.body.classList.toggle('dark-mode');
+
+			// Check if the dark mode class is now applied
 			const isDarkMode = document.body.classList.contains('dark-mode');
 
+			// Toggle icon visibility
 			if (isDarkMode) {
 				lightIcon.style.display = 'block';
 				darkIcon.style.display = 'none';
@@ -2016,11 +2027,6 @@ window.addEventListener('scroll', function () {
 				darkIcon.style.display = 'block';
 			}
 		});
-
-
-
-
-
 
 
 		var revapi1, tpj;

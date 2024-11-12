@@ -1,7 +1,7 @@
 .container1 {
     display: flex;
     padding: 20px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); */
     background-color: #000000;
     flex-direction: row;
     /* gap: 20px; */

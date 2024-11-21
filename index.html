@@ -78,7 +78,7 @@
 						<div class="column one">
 							<div class="top_bar_left clearfix">
 								<div class="logo">
-									<a id="logo" href="#home" title="DETAILING WOLVES 3 - Betheme" data-height="60"
+									<a id="logo" href="#home" title="DETAILING WOLVES 3 - Betheme" data-height=""
 										data-padding="15">
 										<img class="logo-main scale-with-grid svg"
 											src="content/carwash3/images/logo-alter.png" data-retina="" data-height=""
@@ -118,7 +118,7 @@
 
 										</ul>
 									</nav>
-
+<!-- <hr> -->
 								</div>
 
 							</div>
@@ -1177,7 +1177,7 @@
 							<img src="Assets/one.png" alt="qw">
 						</div>
 						<br>
-						<h2 class="fo-clr">9H & 10H <br> CERAMIC & GRAPHENE COATING</h2>
+						<h2 class="fo-clr">9H & 10H  CERAMIC & GRAPHENE COATING</h2>
 
 					</div>
 					<div class="grid-item br-rm">
@@ -1271,7 +1271,7 @@
 						<br>
 						<h2 class="fo-clr"> OIL CHANGE</h2>
 					</div>
-					<div class="grid-item br-rm" style="border-bottom: none;">
+					<div class="grid-item br-rm" >
 						<div class="box_dec">
 							<img src="Assets/3.png" alt="  4D WHEEL
 								ALIGNMENT AND
@@ -1282,7 +1282,7 @@
 							ALIGNMENT AND
 							BALANCING</h2>
 					</div>
-					<div class="grid-item br-rm" style="border-bottom: none;">
+					<div class="grid-item br-rm" >
 						<div class="box_dec">
 							<img src="Assets/7.png" alt="  PERFORMANCE
 								UPGRADING">
@@ -1291,14 +1291,14 @@
 						<h2 class="fo-clr"> PERFORMANCE
 							UPGRADING</h2>
 					</div>
-					<div class="grid-item br-rm" style="border-bottom: none;">
+					<div class="grid-item br-rm" >
 						<div class="box_dec">
 							<img src="Assets/4.png" alt="  TYRE AND ALLOYS">
 						</div>
 						<br>
 						<h2 class="fo-clr">TYRE AND ALLOYS</h2>
 					</div>
-					<div class="grid-item br-rm" style="border-bottom: none;">
+					<div class="grid-item br-rm">
 						<div class="box_dec">
 							<img src="Assets/6.png" alt="BODYKITS AND
 								ACCESSORIES">
@@ -1313,7 +1313,7 @@
 
 			</div>
 		</div>
-
+		<div class="spacebar" style="padding: 2rem;"></div>
 
 		<!-- Service - Pricing page  content -->
 
@@ -1439,14 +1439,14 @@
 												<div class="">
 													<ul style="list-style-type:none; padding-left:0;">
 														<li><i class="uil uil-car-sideview" style="color: #E77523;"></i>
-															EXOTIC DIAMOND WASH
+															Exotic diamond wash
 														</li>
 														<li><i class="uil uil-car-sideview"
-																style="color: #E77523;"></i>&nbsp;&nbsp;&nbsp; GRAPHENE
-															WASH</li>
+																style="color: #E77523;"></i>&nbsp;&nbsp;&nbsp; Graphene wash
+															</li>
 														<li><i class="uil uil-car-sideview"
-																style="color: #E77523;"></i>&nbsp;&nbsp;&nbsp; CERAMIC
-															WASH</li>
+																style="color: #E77523;"></i>&nbsp;&nbsp;&nbsp;Ceramic wash
+														</li>
 
 													</ul>
 												</div>
@@ -1454,14 +1454,14 @@
 													<ul style="list-style-type:none; padding-left:0;">
 
 														<li><i class="uil uil-car-sideview"
-																style="color: #E77523;">&nbsp;&nbsp;&nbsp;</i> PREMIUM
-															WASH</li>
+																style="color: #E77523;">&nbsp;&nbsp;&nbsp;</i> Premium wash
+														</li>
 														<li><i class="uil uil-car-sideview"
-																style="color: #E77523;">&nbsp;&nbsp;&nbsp;</i> ACTIVE
-															FOAM WASH</li>
+																style="color: #E77523;">&nbsp;&nbsp;&nbsp;</i> Active Form Wash
+														</li>
 														<li><i class="uil uil-car-sideview"
-																style="color: #E77523;">&nbsp;&nbsp;&nbsp;</i> BASIC
-															FOAM WASH</li>
+																style="color: #E77523;">&nbsp;&nbsp;&nbsp;</i> Basic Form Wash
+														</li>
 													</ul>
 												</div>
 											</div>
@@ -1971,33 +1971,39 @@
 		// });
 
 		let lastScrollTop = 0;
-		const topBar = document.getElementById('Top_bar');
+const topBar = document.getElementById('Top_bar');
 
-		// Listen for the scroll event
-		window.addEventListener('scroll', function () {
-			let scrollTop = window.scrollY;
+// Set the default height of the top bar
+topBar.style.height = '100px';
 
-			// Increase the height of the top bar while scrolling down
-			const newHeight = Math.min(80, 60 + scrollTop / 10); // Adjust the divisor (10) for desired growth speed
-			topBar.style.height = `${newHeight}px`;
+// Listen for the scroll event
+window.addEventListener('scroll', function () {
+    const scrollTop = window.scrollY;
 
-			if (scrollTop > lastScrollTop) {
-				// Scroll down - Optionally hide top bar or change position
-				topBar.style.top = `-${newHeight}px`; // Adjust top position based on the increased height
-			} else {
-				// Scroll up - Show top bar
-				topBar.style.top = '0';
-				topBar.classList.add('scrolled'); // Add border when scrolled
-			}
+    // Calculate the new height of the top bar
+    const newHeight = Math.min(80, 60 + scrollTop / 10); // Adjust divisor (10) for desired growth speed
+    topBar.style.height = `${newHeight}px`;
 
-			// If scrolled to the top, remove the border
-			if (scrollTop === 0) {
-				topBar.classList.remove('scrolled');
-				topBar.style.height = '100px'; // Reset to the default height
-			}
+    if (scrollTop > lastScrollTop) {
+        // Scrolling down - Hide the top bar
+        topBar.style.top = `-${newHeight}px`; // Negative top based on current height
+    } else {
+        // Scrolling up - Show the top bar
+        topBar.style.top = '0';
+    }
 
-			lastScrollTop = scrollTop;
-		});
+    // Add a border or style when scrolled down
+    if (scrollTop > 0) {
+        topBar.classList.add('scrolled'); // Add a class for styling (e.g., border, shadow)
+    } else {
+        // Reset styles when at the top
+        topBar.classList.remove('scrolled');
+        topBar.style.height = '100px'; // Reset to default height
+    }
+
+    // Update lastScrollTop with the current scroll position
+    lastScrollTop = scrollTop;
+});
 
 
 

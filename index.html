@@ -1981,7 +1981,7 @@ window.addEventListener('scroll', function () {
     const scrollTop = window.scrollY;
 
     // Calculate the new height of the top bar
-    const newHeight = Math.min(80, 60 + scrollTop / 10); // Adjust divisor (10) for desired growth speed
+    const newHeight = Math.min(80, 60 + scrollTop / 2); // Adjust divisor (10) for desired growth speed
     topBar.style.height = `${newHeight}px`;
 
     if (scrollTop > lastScrollTop) {

@@ -4449,6 +4449,7 @@ body.header-below:not(.template-slider) #Header {
 	display: flex;
 	margin-bottom: 0;
 	border-bottom: 2px solid #e77523;
+	height: -webkit-fill-available;
 }
 .layout-full-width.header-fw #Action_bar .container, .layout-full-width.header-fw #Top_bar .container {
 	max-width: 100%;
